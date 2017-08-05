@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <EditText
+        android:id="@+id/etfirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etlastname"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etdateofbirth"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etpassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_above="@+id/etidentification"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etidentification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Identification"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etphone"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etdateofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:layout_above="@+id/etusername"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentEnd="true" />
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etphone"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etemergency"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etemergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Emergency"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etemail"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/bregister"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_above="@+id/etfirstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

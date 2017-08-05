@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shadmanfahimahmad.gobangladesh.NavigationActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dhaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/dhaka"/>
+
+            <Button
+                android:id="@+id/dhk"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="@id/dhaka"
+                android:background="#00ffffff"
+                android:layout_above="@+id/chittagong" />
+
+            <ImageView
+                android:id="@+id/chittagong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/chittagong"
+                android:layout_below="@+id/dhaka"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp" />
+
+
+            <Button
+                android:id="@+id/ctg"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_centerInParent="@id/chittagong"
+                android:background="#00ffffff"
+                android:layout_alignTop="@+id/chittagong"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/khulna" />
+
+
+
+            <ImageView
+                android:id="@+id/khulna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/khulna"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/chittagong"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/khl"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="#00ffffff"
+                android:layout_centerInParent="@id/khulna"
+                android:layout_above="@+id/barishal"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/khulna" />
+
+            <ImageView
+                android:id="@+id/barishal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/barisal"
+                android:layout_marginTop="34dp"
+                android:layout_below="@+id/khulna"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/bari"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_above="@+id/sylhet"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="@id/barishal"
+                android:layout_marginBottom="12dp"
+                android:background="#00ffffff"
+                android:layout_alignTop="@+id/barishal" />
+
+
+            <ImageView
+                android:id="@+id/sylhet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sylhet"
+                android:layout_below="@+id/barishal"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/syl"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_centerInParent="@id/sylhet"
+                android:background="#00ffffff"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/sylhet" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
